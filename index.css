@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Digital Display";
+  src: url("https://praxeds.github.io/scrimba-basketball-scoreboard/Assets/Digital-Display.woff2")
+    format("woff2");
+}
+body {
+  margin: 0;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1b244a;
+  color: #eeee;
+  width: 100vw;
+  height: 100vh;
+}
+.home-chart,
+.guest-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.guest-scored,
+.home-scored {
+  list-style-type: none;
+  list-style: none;
+  width: 16em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.guest-score,
+.home-score {
+  font-family: "Digital Display", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #080001;
+  color: #f94f6d;
+  font-size: 70px;
+  padding: 70px;
+  width: 2em;
+  margin: 0;
+}
+.home,
+.guest {
+  color: #eeee;
+  font-size: 2em;
+}
+button {
+  padding: 5px;
+  border: 1px solid #6a78a3;
+  color: #6a78a3;
+  border-radius: 5px;
+  background: #1b244a;
+}
